@@ -110,6 +110,7 @@ int addjob(pid_t pgid, int bg)
   job->command = NULL;
   job->proc = NULL;
   job->nproc = 0;
+  job->tmodes = shell_tmodes;
   return j;
 }
 
