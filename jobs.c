@@ -232,8 +232,7 @@ bool killjob(int j)
   for (int i = 0; i < jobs[j].nproc; i++)
   {
     Kill(jobs[j].proc[i].pid, SIGTERM);
-    if (jobs[j].proc[i].state == STOPPED)
-      Kill(jobs[j].proc[i].pid, SIGCONT); //na wypadek gdyby proces byl zatrzymany
+    Kill(jobs[j].proc[i].pid, SIGCONT); //na wypadek gdyby proces byl zatrzymany
   }
   return true;
 }
@@ -353,8 +352,8 @@ void shutdownjobs(void)
   for (int i = 0; i < njobmax; i++)
     if (jobs[i].state != FINISHED)
     {
-      Kill(jobs[i].pgid, SIGTERM);
-      Kill(jobs[i].pgid, SIGCONT);
+      Kill(-jobs[i].pgid, SIGTERM);
+      Kill(-jobs[i].pgid, SIGCONT);
     }
   while (true)
   {
