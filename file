@@ -1,0 +1,17 @@
+total 288
+-rw-r--r-- 1 tomasz tomasz   2994 Dec 27 04:40 command.c
+-rw-rw-r-- 1 tomasz tomasz  22640 Jan  9 13:03 command.o
+-rw-r----- 1 tomasz tomasz      0 Jan  9 13:04 file
+drwxr-xr-x 2 tomasz tomasz   4096 Dec 27 04:40 include
+-rw-r--r-- 1 tomasz tomasz   9836 Dec 29 21:59 jobs.c
+-rw-rw-r-- 1 tomasz tomasz  40664 Jan  9 13:03 jobs.o
+-rw-r--r-- 1 tomasz tomasz   1463 Dec 27 04:40 lexer.c
+-rw-rw-r-- 1 tomasz tomasz  13704 Jan  9 13:03 lexer.o
+drwxr-xr-x 2 tomasz tomasz   4096 Jan  9 13:03 libcsapp
+-rw-r--r-- 1 tomasz tomasz    153 Dec 27 04:40 Makefile
+-rw-r--r-- 1 tomasz tomasz   2297 Dec 27 04:40 Makefile.include
+-rw-rw-r-- 1 tomasz tomasz    933 Dec 27 04:40 README.md
+-rwxrwxr-x 1 tomasz tomasz 111088 Jan  9 13:03 shell
+-rw-r--r-- 1 tomasz tomasz   8001 Dec 27 04:40 shell.c
+-rw-r--r-- 1 tomasz tomasz   1617 Dec 27 04:40 shell.h
+-rw-rw-r-- 1 tomasz tomasz  44048 Jan  9 13:03 shell.o
